@@ -1,0 +1,88 @@
+
+/* Top Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  padding: 0 24px;
+  top: 0;
+}
+
+/* School Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 42px;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+#title span {
+  padding: 0px;
+}
+
+#gray {
+  color: #C0C0C0;
+  padding-left: 16px;
+}
+
+/* Top Navigation */
+nav {
+  display: flex;
+  align-self: center;
+  padding-right: 7%;
+}
+
+span a {
+  text-decoration: none;
+  padding-left: 16px;
+}
+
+/* Main Banner image and content */
+
+.main-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+  background-color: #C0C0C0;
+}
+
+.main-banner img {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.banner-content {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 25%;
+  margin-right: 40px;
+}
+
+.banner-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.banner-content h3 {
+  font-size: 1.3em;
+
+}
+
+.banner-content a {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 1.3em;
+}
