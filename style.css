@@ -1,0 +1,414 @@
+
+
+/* Top Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  padding: 0 24px;
+  top: 0;
+}
+
+/* School Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 42px;
+}
+
+.logo h3 {
+  font-size: 1.2em;
+  padding: 10px 12px 10px 0;
+}
+
+#title span {
+  padding: 0px;
+}
+
+#gray {
+  color: rgba(150, 9, 0, 0.7);
+  padding-left: 16px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* Top Navigation */
+.nav {
+  display: flex;
+  align-self: center;
+  padding-right: 7%;
+  font-family: 'Raleway', sans-serif;
+}
+
+span a {
+  text-decoration: none;
+  padding-left: 16px;
+  color: black;
+}
+
+span a:hover {
+  text-decoration: underline;
+  color: rgba(150, 9, 0, 0.7);
+  font-weight: bold;
+}
+
+/* Mobile style for nav and header logo */
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 625px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .nav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .mobile-space {
+    background-color: gray;
+    height: 180px;
+  }
+}
+
+/* Main Banner image and content */
+
+.main-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+  background-color: #C0C0C0;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(150, 9, 0, 0.7);
+}
+
+.main-banner img {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.banner-content {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 25%;
+  margin-right: 40px;
+}
+
+.banner-content h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: rgb(255, 252, 242);
+}
+
+.banner-content p {
+  font-size: 1.3em;
+}
+
+#start {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 1.3em;
+}
+
+#start:hover {
+  text-decoration: underline;
+  background-color: inherit;
+}
+
+
+
+@media only screen and (max-width: 625px) {
+  .main-banner img {
+    display: none;
+  }
+  .banner-content {
+    width: 100%;
+    padding: 32px 16px;
+    margin: auto;
+  }
+}
+
+/* Section - Main Information */
+
+.info-container {
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 252, 242);
+}
+
+.main-info {
+  width: 60%;
+  padding: 32px 0px 38px 24px;
+  margin-left: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+.main-info h1 {
+  font-size: 1.8em;
+  padding-bottom: 24px;
+  font-weight: bold;
+}
+
+.main-info img {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.stacked-info {
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  width: 423px;
+  padding: 32px 0;
+  margin-left: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.stacked-content img {
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+  padding: 0 16px 16px 16px;
+}
+
+#mobile-img {
+  display: none;
+}
+
+.stacked-text {
+  display: inline-flex;
+  flex-flow: column;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.stacked-text h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.stacked-text a {
+  text-decoration: none;
+  color: darkgray;
+  font-weight: bold;
+}
+
+.stacked-text a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.stacked-content:last-child {
+  background-color: rgba(150, 9, 0, 0.7);
+  padding-top: 16px;
+}
+
+@media only screen and (max-width: 625px) {
+  .information .main-info {
+      display: none;
+    }
+
+   .main-info img {
+    display: none;
+  }
+
+  .stacked-info {
+    width: 100%;
+  }
+
+  .stacked-content {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 16px 16px 24px 16px;
+  }
+
+  #pc-img {
+    display: none;
+  }
+
+ #mobile-img {
+   display: block;
+   padding: 16px 16px 24px 16px;
+   width: auto;
+  }
+}
+
+
+/* Course Section */
+
+.courses {
+  background-color: #C0C0C0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(150, 9, 0, 0.7);
+}
+.courses h1 {
+  text-align: center;
+  font-size: 2.2em;
+  padding: 32px 0;
+  color: rgb(255, 252, 242);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 90%;
+  margin-bottom: 32px;
+}
+
+.course {
+  width: 27%;
+  height: 295px;
+  margin: 0 8px 16px 8px;
+  background-color: rgb(255, 252, 242);
+}
+
+.course img {
+  width: 100%;
+}
+
+.text p {
+  padding: 0 0px 24px 16px;
+  font-size: .9em;
+}
+.text h2 {
+  text-align: left;
+  font-size: 1.3em;
+  padding: 16px 0 8px 16px;
+}
+
+.text h3 {
+  font-size: 1em;
+  padding: 8px 16px;
+  text-decoration: underline;
+}
+
+/* Mobile style for Course section */
+
+@media only screen and (max-width: 625px) {
+  .course img {
+    display: none;
+  }
+  .course-container {
+    flex-flow: column;
+  }
+
+  .course {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 8px 0;
+  }
+
+  .course .text h3 {
+    display: none;
+    }
+
+  .course .text p {
+    display: none;
+  }
+
+  .text {
+    padding: 16px;
+  }
+}
+
+/* Section - thesis*/
+.thesis {
+  background-color: rgb(255, 252, 242);
+}
+
+.thesis-container {
+  display: flex;
+  width: 100%;
+}
+
+.thesis h2 {
+  text-align: center;
+  font-size: 2.2em;
+  padding: 32px 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.main-info video {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.stacked-info .first {
+  background-color: rgba(150, 9, 0, 0.7);
+  padding-top: 16px;
+}
+
+.stacked-info .second {
+  background-color: rgb(255, 252, 242);
+}
+
+@media only screen and (max-width: 625px) {
+  .thesis-container {
+    display: block;
+  }
+  .thesis .stacked-info {
+    display: none;
+  }
+
+  .thesis .main-info {
+    width: 100%;
+  }
+
+  video {
+    margin: auto;
+  }
+
+  .thesis .main-info h1 {
+    display: none;
+  }
+
+  .thesis .main-info p {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0 32px 24px;
+  border-top: 1px solid gray;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer span{
+  padding-right: 24px;
+}
